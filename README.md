@@ -1,4 +1,4 @@
-Some time ago I wanted to try tensorflow, but I hit [this](https://github.com/tensorflow/tensorflow/issues/17411) issue. Basically my workstation is quite old and the cpu doesn't support AVX instructions, required by recent tensorflow versions. 
+Some time ago I wanted to try tensorflow with python3, but I hit [this](https://github.com/tensorflow/tensorflow/issues/17411) issue. Basically my workstation is quite old and the cpu doesn't support AVX instructions, required by recent tensorflow versions. 
 
 Importing tensorflow gave me: 
 
@@ -7,10 +7,14 @@ Importing tensorflow gave me:
 The proposed solution is to do a downgrade to an older version, but if you want to benefit of the new features, you have to find alternatives, like compiling it on your workstation.
 
 Since I couldn't find a pre-built package compiled without AVX support, I built my own and now I make it available.
-The package has been build on a **Intel Core Duo P8400**.
+The package has been build on a Intel Core Duo P8400,
 The tensorflow version I built is 1.10.
 
-Here's what's supported by my notebook.
+Here's where I build the packge.
+
+| Tensorflow version  | Operating System  | Python  |  
+|:-:|:-:|:-:|
+| 1.10  | Ubuntu 18.04.1 LTS | 3.6.5  |
 
 Command:
 
